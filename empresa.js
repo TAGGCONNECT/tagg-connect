@@ -1,188 +1,105 @@
-/*
-=========================================
-TAGG CONNECT
-Configuração da Empresa
-=========================================
-
-Altere apenas as informações abaixo.
-Todo o restante da página será atualizado automaticamente.
-
-*/
-
 const empresa = {
 
-    // ===========================
-    // Informações principais
-    // ===========================
+    // =====================================================
+    // DADOS DA EMPRESA
+    // =====================================================
 
-    nome: "TAGG Connect",
+    nome: "TAGG",
 
     complemento: "Connect",
 
     slogan: "Conexões inteligentes para empresas.",
 
     descricao:
-
-        "Soluções em NFC, QR Code e Páginas Inteligentes para empresas.",
+        "Especialistas em NFC, QR Code e Páginas Inteligentes.",
 
     logo: "assets/logo.png",
 
-    banner: "",
+    empresaVerificada: true,
 
     corPrincipal: "#C8A96A",
 
-    corSecundaria: "#181818",
+    corFundo: "#0D0D0D",
 
-    empresaVerificada: true,
-
-
-
-    // ===========================
-    // Contato
-    // ===========================
-
-    whatsapp: {
-
-        ativo: true,
-
-        titulo: "WhatsApp",
-
-        descricao: "Fale conosco",
-
-        link: "https://wa.me/5588999999999"
-
-    },
+    corCard: "#181818",
 
 
+    // =====================================================
+    // BOTÕES
+    // =====================================================
 
-    telefone: {
-
-        ativo: true,
-
-        titulo: "Telefone",
-
-        descricao: "(88) 99999-9999",
-
-        link: "tel:+5588999999999"
-
-    },
-
-
-
-    email: {
-
-        ativo: true,
-
-        titulo: "E-mail",
-
-        descricao: "contato@taggconnect.com.br",
-
-        link: "mailto:contato@taggconnect.com.br"
-
-    },
-
-
-
-    endereco: {
-
-        ativo: true,
-
-        titulo: "Localização",
-
-        descricao: "Tabuleiro do Norte - CE",
-
-        link: "https://maps.google.com"
-
-    },
-
-
-
-    instagram: {
-
-        ativo: true,
-
-        titulo: "Instagram",
-
-        descricao: "@taggconnect",
-
-        link: "https://instagram.com/taggconnect"
-
-    },
-
-
-
-    site: {
-
-        ativo: false,
-
-        titulo: "Site",
-
-        descricao: "Acesse nosso site",
-
-        link: ""
-
-    },
-
-
-
-    // ===========================
-    // Soluções
-    // ===========================
-
-    solucoes: [
+    botoes: [
 
         {
-
-            titulo: "Connect Basic",
-
-            descricao: "Placa NFC para empresas",
-
-            icone: "fa-solid fa-mobile-screen",
-
-            link: "#"
-
+            ativo: true,
+            titulo: "WhatsApp",
+            descricao: "Fale conosco",
+            icone: "fa-brands fa-whatsapp",
+            link: "https://wa.me/5588999999999"
         },
 
-
-
         {
-
-            titulo: "Connect Review",
-
-            descricao: "Avaliações Google",
-
-            icone: "fa-solid fa-star",
-
-            link: "#"
-
+            ativo: true,
+            titulo: "Instagram",
+            descricao: "@taggconnect",
+            icone: "fa-brands fa-instagram",
+            link: "https://instagram.com/taggconnect"
         },
 
-
-
         {
-
-            titulo: "Connect Card",
-
-            descricao: "Cartão de visita NFC",
-
-            icone: "fa-regular fa-address-card",
-
-            link: "#"
-
+            ativo: true,
+            titulo: "Telefone",
+            descricao: "(88) 99999-9999",
+            icone: "fa-solid fa-phone",
+            link: "tel:+5588999999999"
         },
 
-
+        {
+            ativo: true,
+            titulo: "E-mail",
+            descricao: "contato@taggconnect.com.br",
+            icone: "fa-solid fa-envelope",
+            link: "mailto:contato@taggconnect.com.br"
+        },
 
         {
+            ativo: true,
+            titulo: "Localização",
+            descricao: "Tabuleiro do Norte - CE",
+            icone: "fa-solid fa-location-dot",
+            link: "https://maps.google.com"
+        },
 
-            titulo: "Connect Table",
-
-            descricao: "Solução para restaurantes",
-
-            icone: "fa-solid fa-utensils",
-
+        {
+            ativo: true,
+            titulo: "Pix",
+            descricao: "Pagamento rápido",
+            icone: "fa-solid fa-qrcode",
             link: "#"
+        },
 
+        {
+            ativo: true,
+            titulo: "Wi-Fi",
+            descricao: "Conecte-se",
+            icone: "fa-solid fa-wifi",
+            link: "#"
+        },
+
+        {
+            ativo: true,
+            titulo: "Google",
+            descricao: "Avalie nossa empresa",
+            icone: "fa-brands fa-google",
+            link: "#"
+        },
+
+        {
+            ativo: true,
+            titulo: "Site",
+            descricao: "Conheça nosso trabalho",
+            icone: "fa-solid fa-globe",
+            link: "#"
         }
 
     ]
