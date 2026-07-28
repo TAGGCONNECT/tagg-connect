@@ -1,0 +1,402 @@
+/* ==========================================================
+   TAGG CONNECT
+   Style v1.0
+========================================================== */
+
+/* -------------------------
+   Variáveis
+------------------------- */
+
+:root{
+
+    --background:#0D0D0D;
+    --card:#181818;
+    --card-hover:#202020;
+    --border:#2A2A2A;
+
+    --text:#FFFFFF;
+    --text-secondary:#9E9E9E;
+
+    --cor-principal:#C8A96A;
+
+    --radius:18px;
+
+    --shadow:
+        0 8px 30px rgba(0,0,0,.25);
+
+}
+
+/* -------------------------
+   Reset
+------------------------- */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+/* -------------------------
+   Container
+------------------------- */
+
+.container{
+
+    width:min(92%,460px);
+
+    margin:auto;
+
+    padding:40px 0 60px;
+
+}
+
+/* -------------------------
+   Hero
+------------------------- */
+
+.hero{
+
+    text-align:center;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:.7s;
+
+}
+
+.hero.mostrar{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.hero img{
+
+    width:115px;
+
+    height:115px;
+
+    object-fit:contain;
+
+    margin-bottom:22px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    color:var(--cor-principal);
+
+    margin-top:4px;
+
+}
+
+.hero p{
+
+    margin-top:18px;
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* -------------------------
+   Badge
+------------------------- */
+
+.badge{
+
+    margin:28px auto;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:#141414;
+
+    border:1px solid var(--border);
+
+    color:var(--cor-principal);
+
+    font-size:14px;
+
+}
+
+.badge i{
+
+    color:var(--cor-principal);
+
+}
+
+/* -------------------------
+   Blocos
+------------------------- */
+
+.bloco{
+
+    margin-top:45px;
+
+}
+
+.bloco h2{
+
+    color:var(--cor-principal);
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+/* -------------------------
+   Card
+------------------------- */
+
+.card-link{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    transition:.25s;
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+}
+
+.card-link.mostrar{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.card-link:hover{
+
+    background:var(--card-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.card-link:active{
+
+    transform:scale(.98);
+
+}
+
+/* -------------------------
+   Conteúdo esquerdo
+------------------------- */
+
+.card-esquerda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/* -------------------------
+   Ícone
+------------------------- */
+
+.icone{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:#101010;
+
+    border:1px solid var(--border);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.icone i{
+
+    color:var(--cor-principal);
+
+    font-size:20px;
+
+}
+
+/* -------------------------
+   Texto
+------------------------- */
+
+.texto h3{
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.texto p{
+
+    color:var(--text-secondary);
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+/* -------------------------
+   Seta
+------------------------- */
+
+.seta{
+
+    color:var(--text-secondary);
+
+    font-size:15px;
+
+}
+
+/* -------------------------
+   Rodapé
+------------------------- */
+
+footer{
+
+    margin-top:55px;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+}
+
+footer p{
+
+    font-size:13px;
+
+    margin-bottom:12px;
+
+}
+
+footer img{
+
+    width:120px;
+
+    opacity:.75;
+
+    transition:.3s;
+
+}
+
+footer img:hover{
+
+    opacity:1;
+
+}
+
+/* -------------------------
+   Mobile
+------------------------- */
+
+@media(max-width:420px){
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero img{
+
+        width:95px;
+        height:95px;
+
+    }
+
+    .card-link{
+
+        padding:16px;
+
+    }
+
+}
